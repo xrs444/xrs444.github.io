@@ -10,7 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      
+      - uses: actions/cache@master
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashfiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os  }-gems-
+            
       - uses: helaili/jekyll-action@master
         with:
           token: ${{ secrets.XRS444_NET }}
-          target-branch: 'gh-pages'
+          target_branch: 'gh-pages'
