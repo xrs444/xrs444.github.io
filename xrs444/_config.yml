@@ -22,7 +22,7 @@ title: "xrs444.net"
 email: "xrs444@xrs444.net"
 description: >- # this means to ignore newlines until "baseurl:"
 
-Not a lot, a lot of the time
+"Not a lot, a lot of the time"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xrs444.net" # the base hostname & protocol for your site, e.g. http://example.com
