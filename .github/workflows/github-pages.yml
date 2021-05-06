@@ -13,4 +13,4 @@ jobs:
       - uses: helaili/jekyll-action@master
         with:
           token: ${{ secrets.XRS444_NET }}
-
+          target-branch: 'gh-pages'
