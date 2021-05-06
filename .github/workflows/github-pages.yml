@@ -1,0 +1,16 @@
+name: Build and deploy site to GitHub-Pages
+
+on:
+  push:
+    branches:
+     - main
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: helaili/jekyll-action@master
+        with:
+          token: ${{ secrets.XRS444_NET }}
+
